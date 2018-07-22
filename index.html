@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh">
+<!--<![endif]-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>「梦里幽境」我们的故事</title>
+<meta name="keywords" content="Mojang,VPS,代理,沙盒游戏,生存,创造,空岛,小游戏,多人联机,官方下载,梦里幽境,材质包,3D沙盒游戏,我的世界,Minecraft,Minecraft中国,Minecraft私服,Minecraft官方,Minecraft正版,Minecraft免费,Minecraft梦里幽境,Minecraft官网,Minecraft下载,Minecraft手游,MinecraftPE,Minecraft我的世界,我的世界游戏,我的世界中国,我的世界中国版,MCBBS,我的世界中文版,我的世界私服,我的世界官方,我的世界正版,我的世界免费,我的世界梦里幽境,我的世界官网,我的世界下载,我的世界游戏下载,我的世界手游,我的世界游戏,我的世界网页,我的世界下载客户端,我的世界正式版,我的世界中文下载,我的世界官方网址,我的世界官方下载,我的世界中文版,我的世界官方,我的世界minecraft,我的世界官网注册,我的世界网址,我的世界电脑版,我的世界新手注册,我的世界账号注册,我的世界官方平台,我的世界手机版,我的世界下载,我的世界官网,我的世界正版,我的世界平台,我的世界pc游戏,我的世界中国版,我的世界,我的世界中国版pc,我的世界单机版,我的世界版本配置,我的世界测试版,我的世界官方链接,我的世界中国公测,我的世界下载站,我的世界方块,我的世界客户端,我的世界二维码,我的世界国际版,我的世界官方网页地址,我的世界二维码下载,我的世界官网下载,我的世界注册,我的世界官方信息,我的世界客户端下载平台,我的世界扫码下载,我的世界微软版,我的世界下载链接,我的世界梦里幽境官方二维码,我的世界梦里幽境,我的世界梦里幽境官网下载地址描述">
+<meta name="description" content="我的世界梦里幽境,简单温馨养老生存服,空岛服,创造服...更多精彩期待有你." >
+<meta name="author" content="梦里幽境" >
+<meta name="copyright" content="梦里幽境.">
+<!-- Mobile Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/mcfenlogo.png">
+<!-- Bootstrap core CSS -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<!-- Plugins -->
+<link href="css/animations.css" rel="stylesheet">
+<!-- Worthy core CSS file -->
+<link href="css/style.css" rel="stylesheet">
+<!-- Custom css --> 
+<link href="css/custom.css" rel="stylesheet">
+</head>
+<body ondragstart="return false" oncontextmenu="return false" onselectstart="return false">
+<!-- scrollToTop -->
+<!-- ================ -->
+<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+<!-- header start -->
+<!-- ================ --> 
+<header class="header fixed clearfix navbar navbar-fixed-top">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<!-- header-left start -->
+<!-- ================ -->
+<div class="header-left clearfix">
+<!-- logo -->
+<div class="logo smooth-scroll">
+<a href=""><img id="logo" src="images/mcfen_keai.png" alt="Worthy"></a>
+</div></div></div>
+<div class="col-md-8">
+<!-- header-right start -->
+<!-- ================ -->
+<div class="header-right clearfix">
+<!-- main-navigation start -->
+<!-- ================ -->
+<div class="main-navigation animated">
+<!-- navbar start -->
+<!-- ================ -->
+<nav class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+<!-- Toggle get grouped for better mobile display -->
+<!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li><a href="https://www.mcfen.net"  title="梦里幽境官网首页">官网首页</a></li>
+<li><a href="http://pay.mcfen.net"  title="帮助服务器更好的发展">赞助支持</a></li>
+<li><a href="http://download.mcfen.net" target="_blank" title="客户端及相关资源下载">下载支持</a></li>
+<li><a href="http://520.mcfen.net/dear_friend/support/question.html" target="_blank" title="常见问题解答页面">常见问题</a></li>
+<li><a href="http://vip.mcfen.net" target="_blank" title="免费观看VIP视频">VIP视频</a></li>
+</ul>
+</div></div></nav></div></div></div></div></div>
+</header>
+<!-- header end -->
+<!-- banner start -->
+<!-- ================ -->
+<div id="banner" class="banner">
+<div class="banner-image"></div>
+<div class="banner-caption">
+<div class="container">
+<div class="row">
+<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
+<h1 class="text-center">我的世界 <span>梦里幽境</span></h1>
+<p class="lead text-center">一个温馨友爱的MC服务器,期待我们相聚的缘分...</p>
+<!-- 梦里幽境开服计时 -->
+<body><div class="text-center"> 
+<br>
+<b>梦里幽境初创至今已</b>
+<br>
+<span id="t_d">00 天</span>  
+<span id="t_h">00 时</span>  
+<span id="t_m">00 分</span>  
+<span id="t_s">00 秒</span>  
+<span id="mcfen"></span>  
+</div>  	
+<script>  
+   function GetRTime(){  
+       var EndTime= new Date();
+       var NowTime = new Date('2017/02/14 14:58:22');//偷看源代码的都是坏银
+       var t =EndTime.getTime() - NowTime.getTime();  
+       var d=Math.floor(t/1000/60/60/24);  
+       var h=Math.floor(t/1000/60/60%24);  
+       var m=Math.floor(t/1000/60%60);  
+       var s=Math.floor(t/1000%60);  
+  
+       document.getElementById("t_d").innerHTML = d + "天";  
+       document.getElementById("t_h").innerHTML = h + "时";  
+       document.getElementById("t_m").innerHTML = m + "分";  
+       document.getElementById("t_s").innerHTML = s + "秒";  
+       if(s=="0" && m=="0" && h=="0" && d=="0"){  
+       document.getElementById("mcfen").innerHTML ="梦里幽境初创日";//到期提醒  
+       document.getElementById("mcfen").style.color="red";}  
+}  
+   setInterval(GetRTime,0);  
+     
+</script>   
+</body>  
+</div></div></div></div></div>
+<!-- banner end -->
+<!-- section start -->
+<!-- ================ -->
+<div class="section clearfix object-non-visible" data-animation-effect="fadeIn">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h1 id="about" class="title text-center">关于 <span>梦里幽境</span></h1>
+<p class="lead text-center">一个十分念旧的业余玩家为了情怀和承诺而创建的MC服务器</p>
+<div class="space"></div>
+<div class="row">
+<div class="col-md-6">
+<a href="http://520.mcfen.net/dear_friend/" target="_blank" title="点击查看服主的一些唠叨话"" target="_blank"><img src="images/mcfen_logo.png"></a>
+<div class="space"></div>
+</div>
+<div class="col-md-6" >
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦里幽境初创于2017年2月,是一个以普通玩家的角度同时兼顾长远健康发展而设计打造的MC服务器,力求接近原版,不做过多的限制. 服主没有太大经济压力,开服并非一时兴起,已经做了长远考虑.开服不以赚钱为目的,这是一个温馨向、养老向和怀旧向的服务器,闲暇时光与老朋友们一起回忆那些过往的点滴,那应该也是种不错的感觉...</p>
+<p><span style="color:#009900;">❤</span>=========================<span style="color:#009900;">❤</span></p>
+<ul class="list-unstyled" style="font-family:微软雅黑;font-size:medium;">
+<li style="color:#003399;><a class="fa fa-caret-right pr-10 text-colored">&nbsp; &nbsp;&nbsp; &nbsp;<strong>服务器地址&nbsp;(需申请&nbsp;&nbsp;☞&nbsp;<a href="http://520.mcfen.net/dear_friend/support/" target="_blank"><span style="color:#E53333;">白名单</span></a>)</strong></li>
+</ul>
+<ul style="font-family:微软雅黑;font-size:medium;">
+<li>
+<strong>电信主线</strong>: &nbsp;<a style="color:#E53333;"><strong>mcfen.net</strong></a> 
+</li>
+<li>
+<strong>联通线路</strong>: &nbsp;<a style="color:#E53333;"><strong>lt.mcfen.net</strong></a> 
+</li>
+<li>
+<strong>移动线路</strong>: &nbsp;<a style="color:#E53333;"><strong>yd.mcfen.net</strong></a> 
+</li>
+</ul>
+<ul style="font-family:微软雅黑;font-size:medium;">
+<li>
+<strong>正版体验</strong>: &nbsp;<a style="color:#009900;"><strong>mojang.mcfen.net</strong></a> (<a style="color:#E53333;">免审核</a>)
+</li>
+</ul>
+</div></div>
+<div class="space"></div>
+<h2>服务器规则：</h2>
+<div class="row">
+<div class="col-md-6">
+<p><span style="color:#E53333;"><strong>①</strong>&nbsp;</span ><span style="color:#4C33E5;">凡事三思后行</span ></p>
+<p><span style="color:#E53333;"><strong>②</strong>&nbsp;</span ><span style="color:#4C33E5;">尊重自己尊重他人</span ></p>
+<img src="https://img.mcfen.net/data/加群二维码.png">
+</div>
+<div class="col-md-6">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingOne">
+<h4 class="panel-title">
+<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+初衷♔背景</a></h4></div>
+<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+<div class="panel-body">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在2017年2月以前我只是一个对mc都还没了解透的MC玩家,因为曾经玩了两年的服务器关闭,埋葬了过往许多美好的回忆,我又是个恋旧的人,心感失落,于是萌发了自己弄个服务器的冲动,把想法跟小伙伴们沟通后,大家都投来期待的目光...于是在期待 冲动及茫然等等情绪之中经过漫长的几个月时间打磨完成了梦里幽境服务器.&nbsp;制作梦里幽境,花了大量时间和精力去了解那些曾经从未听说过的插件和命令,从一无所知到慢慢的对插件和各种命令以及配置信息、汉化插件等知识有所了解,虽然挺累人的,但是也有属于自己的成就感,感谢回忆路上一直相伴的朋友们,回忆有你更精彩...
+</div></div></div>
+
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingTwo">
+<h4 class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+友谊♔娱乐</a></h4></div>
+<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+<div class="panel-body">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;游戏只是娱乐,不可能也不应该每天都把时间耗在上面,开心最重要.开服目的旨在让朋友们有个体验不错的服务器.闲暇之时想玩游戏了就上线看看.通过游戏结实更多的友谊...很怀念曾经跟朋友们一起玩MC的那些日子,只盼在多年以后我们还能一起追忆过去,展望未来...</div>
+</div></div>
+<div class="panel panel-default">
+<div class="panel-heading" role="tab" id="headingThree">
+<h4 class="panel-title">
+<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+赞助♔支持
+</a></h4></div>
+
+<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+<div class="panel-body">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;服务器运行是需要钱,但不会掉进钱眼里,仅把赞助和捐助当成一种补贴,有当然最好,没有也无所谓. 建服的初衷只为了曾经的那份感动,只是想让老朋友们有个能把它当家的地方,只要不违规搞破坏就能安安稳稳的玩下去. 不需要看管理的脸色行事,不需要担心可能随时关服而丢失自己的建筑和回忆,在这里只要遵纪守法不需要讨好任何人,你只需要开心就好.
+</div></div></div></div></div></div></div></div></div></div>
+
+<!-- 评论区 -->
+<!-- ================ -->
+<!--PC打分版-->
+<div id="SOHUCS" sid="520"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window._config = { showScore: true };
+window.changyan.api.config({
+appid: 'cytCD1kSL',
+conf: 'prod_6355f43ce150e770ff185d47aa5a67dc'
+});
+</script>
+<!-- ================ -->
+<div class="default-bg space">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+                        <p class="text-center"><a href="http://bbs.mcfen.net/" target="_blank" stat="fbar1001">玩家论坛</a>|<a href="http://520.mcfen.net/" target="_blank" stat="fbar1003">关于我们</a>|<a href="http://520.mcfen.net/dear_friend/support/help.html" target="_blank" stat="fbar1004">游戏帮助</a>|<a href="http://pay.mcfen.net/" target="_blank" stat="fbar1004">赞助支持</a>|<a href="mailto:angel@mcfen.net" target="_blank" stat="fbar1005">反馈邮箱</a>|<a href="tencent://groupwpa/?subcmd=all&param=7B2267726F757055696E223A3132393835383238362C2274696D655374616D70223A313532373535393731327D0A">联系我们</a></p>
+<p class="text-center">&copy;  2014-2017 初入mc - 梦境 - 梦里幽境</p>
+</div></div></div></div>
+<!-- .subfooter end -->
+<!-- ========================= -->
+<!-- Jquery and Bootstap core js files -->
+<script type="text/javascript" src="plugins/jquery.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<!-- Modernizr javascript -->
+<script type="text/javascript" src="plugins/modernizr.js"></script>
+<!-- Backstretch javascript -->
+<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+<!-- Appear javascript -->
+<script type="text/javascript" src="plugins/jquery.appear.js"></script>
+<!-- Initialization of Plugins -->
+<script type="text/javascript" src="js/template.js"></script>
+<!-- Custom Scripts -->
+<script type="text/javascript" src="js/custom.js"></script>
+
+<audio src="music/wind.mp3"  autoplay="autoplay" loop="-1" starttime="10"></audio>
+<!-- 梦里幽境送你一颗小红心 -->
+<script type="text/javascript" src="js/love.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*公用*/
+/*常用属性*/
+*{margin: 0;padding: 0;font-family: 微软雅黑;}
+input{border: 1px solid rgb(229,230,231)}
+select{border: 1px solid rgb(229,230,231)}
+.floatL{float: left;}
+.floatR{float: right;}
+.textC{text-align: center;}
+.textR{text-align: right;}
+.clear{clear: both;}
+.cursor{cursor: pointer;}
+.fixed{position: fixed;}
+.inlineB{display: inline-block;}
+.block{display: block;}
+.verticalM{vertical-align: middle;}
+.horizontalM{margin: 0 auto}
+.relative{position: relative;}
+.absolute{position: absolute;}
+.display{display: none}
+/*通用样式*/
+.verifys{background: #fef9f9;border: 1px solid #f2959e;}
+a{
+	color: #000;
+	text-decoration: none;
+}
+/*样式*/
+.type3{
+  color: #ffaa00;
+  border-bottom: 2px solid #ffaa00;
+}
+.type_four{
+  color: #ffaa00;
+}
+.type_five{
+  color: #ffaa00;
+  border-bottom: 1px solid #ffaa00;
+}
+.M-box .type_six{
+	background: #ffaa00;
+	color: #fff;
+}
+.M-box .type_six:hover{
+	background: #ffaa00;
+	color: #fff;
+}
+/*验证样式*/
+li{
+	list-style-type: none;
+}
+h3,h1,h2,h4,h5,h6{ font-weight:normal}
+button:focus{
+    outline: 0;
+}
+img{border: 0}
+/*遮罩*/
+.shade{width: 100%;height: 100%;background: #000000;opacity: 0.6;filter:alpha(opacity:60);display: none;top:0;left: 0;z-index: 8;}
+/*头部*/
+.head{border-bottom: 1px solid #ebebeb;background: #fff;}
+.head .container{width:1200px;margin:0 auto;height:70px; }
+.head .logopng{padding-top: 16px;}
+.head .webNav li{width: 110px;color: #282828;line-height: 68px;height: 68px;border-bottom: 2px solid #ffffff;font-size: 14px;list-style: none;}
+.head .webNav li:hover{border-bottom: 2px solid #ffaa00;transition:1000;}
+.head .webNav li>a{display: inline-block;width: 110px;}
+.head .webNav li>a:hover{color: #ffaa00}
+.head .webNav .product,.head .webNav .Suggest,.head .webNav .as_regards{
+	position: relative!important;
+	z-index: 4;
+}
+/*导航栏下拉菜单*/
+.head .webNav .productBox{
+	position: absolute!important;
+	bottom: -282px;
+	left: 0;
+	z-index: 4;
+}
+.head .webNav .SuggestBox{
+	position: absolute!important;
+	bottom: -72px!important;
+	left: 0;
+	z-index: 4;
+}
+.head .webNav .as_regardsBox{
+	position: absolute!important;
+	bottom: -72px!important;
+	left: 0;
+	z-index: 4;
+}
+.head .webNav .productBox a,.head .webNav .SuggestBox a,.head .webNav .as_regardsBox a{width: 110px;height: 35px;line-height: 35px;text-align: center;display: block;background:#fff;}
+.head .webNav .productBox a:hover,.head .webNav .SuggestBox a:hover,.head .webNav .as_regardsBox a:hover{color:#ffaa00;background: #f1f1f1;}
+/*底部*/
+.foot{background: rgb(47,47,47);height: 240px;border-top: 5px solid rgb(83,83,83);color: #9b9999;font-family: 黑体;min-width: 1200px;}
+.foot .containerU{height: 176px;width: 1200px;}
+.foot p{font-family: 黑体}
+.foot .containerU .footIcon{padding-top: 32px;}
+.foot .containerU .footIcon span{display: inline-block;width: 30px;height: 30px;margin-right: 10px;}
+.foot .containerU .footIcon span:hover{background-position: -30px}
+.foot .containerU .left .footHelp{background: url("../../images/foothelp.png")}
+.foot .containerU .left .footjl{background: url("../../images/footjl.png")}
+.foot .containerU .left .footmail{background: url("../../images/footmail.png")}
+.foot .containerU .left .footWechat{background: url("../../images/footsh.png");position: relative;}
+.containerU .left .footWechat img{position: absolute;top: -160px;left: -55px;display: none;}
+.foot .containerU .cer{padding-top: 6px;}
+.foot .containerU .cer img{border: 1px solid rgb(47,47,47)}
+.foot .containerU .cer img:hover{border: 1px solid #c5c5c5}
+.foot .containerU .middle{padding-right: 52px;}
+.foot .containerU .p1{font-size: 18px;padding-top: 32px;}
+.foot .containerU .p2{font-size: 14px;padding-top: 16px;}
+.foot .containerU .p3{font-size: 14px;padding-top: 30px;}
+.foot .containerU .p4{font-size: 24px;padding-top: 12px;}
+.foot .containerU .p5{font-size: 14px;padding-top: 10px;}
+.foot .containerU .p6{font-size: 14px;padding-top: 4px;}
+.foot .containerU .p7{font-size: 14px;padding-top: 30px;}
+.foot .containerD{border-top: 1px solid #414141}
+.foot .containerD .container{width: 1200px;font-size: 12px;line-height: 60px;}
+/*正文部分*/
+.main{background: rgb(249,249,249);padding-bottom: 20px;}
+.main .container{width: 1200px;}
+.main .nav{font-size: 14px;color: #282828;line-height: 50px;}
+.main .nav a{color: #282828}
