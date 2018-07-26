@@ -1,7 +1,7 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('https://img.mcfen.net/data/2015-09-11_00.28.55.jpg');
+		$(".banner-image").backstretch('https://wx4.sinaimg.cn/large/60e61f9fgy1ftn4fsrbypj218g0p0qdm.png');
 		
 		// Fixed header
 		//-----------------------------------------------
