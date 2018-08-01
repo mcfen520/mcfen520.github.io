@@ -3,20 +3,9 @@
     src: url("fonts/minecraftfont.woff");
 }
 
-#play-menu {
-    position: fixed;
-    top: 10%;
-    left: 10%;
-    right: 10%;
-    bottom: 10%;
-    font-family: "Minecraft";
-    color: #fff;
-    text-align: center;
-    z-index: 1000;
-}
 #play-menu h3 {
     font-family: "Minecraft";
-    margin: 50px 0 100px;
+    margin: 50px 0 46px;
     text-shadow: 3px 3px 0 #333;
 }
 #play-menu label, #play-menu input, #play-menu button {
@@ -24,7 +13,7 @@
     width: 400px;
     margin: 0 auto;
     text-align: left;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 #play-menu label {
     color: #999;
@@ -37,7 +26,7 @@
     color: #fff;
     padding: 10px;
     font-weight: normal;
-    text-shadow: 2px 2px 0 #333;
+    text-shadow: 20px 2px 0 #333;
 }
 #play-menu button {
     border: 2px solid #000;
