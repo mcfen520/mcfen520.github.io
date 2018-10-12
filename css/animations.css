@@ -159,7 +159,7 @@ File Description: Custom Animations
   animation-name: fadeInUpSmall;
 }
 
-
+/*! 畅言去广告代码 */
 #feedAv{ margin-top: -250px!important;transform: scale(0);}
 .module-cmt-box{padding:10px 16px!important;}
 .header-login{left: 746px!important;border: 0!important;border-radius: 0!important;}
@@ -179,3 +179,9 @@ File Description: Custom Animations
 .build-floor-gw{background:#f0f0f0 !important}
 .block-cont-gw{padding:20px 0 !important;border:0 !important;}
 .section-list-w{width:95%!important;margin-left:2%!important;}
+/*!
+畅言去右下角弹窗广告代码
+*/
+#MZAD_POP_PLACEHOLDER {display: none !important;}
+
+#pop_ad{display: none !important;}
