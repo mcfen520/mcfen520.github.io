@@ -182,4 +182,6 @@ File Description: Custom Animations
 /*!
 畅言去右下角弹窗广告代码
 */
-div#pop_ad { opacity: 0;}
+#MZAD_POP_PLACEHOLDER {display: none !important;}
+
+#pop_ad{display: none !important;}
