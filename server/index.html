@@ -42,7 +42,7 @@ button{
 }
 </style>
 </head>
-<body ondragstart="return false" oncontextmenu="return false" onselectstart="return false">
+<body ondragstart="return false" onselectstart="return false" oncontextmenu="if(event.srcElement.type != 'text') return false">
 <!-- scrollToTop -->
 <div id="play-menu">
           <h3>编辑服务器信息</h3>
@@ -54,7 +54,7 @@ button{
 		  <p>
         <img src="images/mcfen_server.png">
       </p>
-	  <a style="color:#337FE5;"><strong>温馨提示:</strong></a> <a style="color:#CCCCCC;">选中文字后 <u>Ctrl + C</u> 即可复制, <u>Ctrl + V</u> 即可粘贴</a>
+	  <a style="color:#337FE5;"><strong>温馨提示:</strong></a> <a style="color:#CCCCCC;">选中文字后即可复制</a>
 		</div>
 <audio src="https://mc.res.netease.com/pc/gw/20170316200817/img/bg_2d1f086.mp3"  autoplay="autoplay" loop="-1" starttime="10"></audio>
 <script type="text/javascript" src="js/love.js"></script>

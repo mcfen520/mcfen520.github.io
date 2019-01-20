@@ -84,7 +84,25 @@
 <span id="mcfen"></span>  
 </div>  	
 <script>  
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1;};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p;}('C f(){2 a=j g();2 9=j g(\'l/p/i i:n:o\');2 t=a.c()-9.c();2 d=8.6(t/7/1/1/b);2 h=8.6(t/7/1/1%b);2 m=8.6(t/7/1%1);2 s=8.6(t/7%1);4.3("k").5=d+"q";4.3("A").5=h+"u";4.3("B").5=m+"F";4.3("E").5=s+"D";v(s=="0"&&m=="0"&&h=="0"&&d=="0"){4.3("e").5="y";4.3("e").x.z="w"}}r(f,0);',42,42,'|60|var|getElementById|document|innerHTML|floor|1000|Math|NowTime|EndTime|24|getTime||mcfen|GetRTime|Date||14|new|t_d|2017||58|22|02|天|setInterval|||时|if|red|style|梦里幽境初创日|color|t_h|t_m|function|秒|t_s|分'.split('|'),0,{}))
+   function GetRTime(){  
+       var EndTime= new Date();
+       var NowTime = new Date('2017/02/14 14:58:22');//偷看源代码的都是坏银
+       var t =EndTime.getTime() - NowTime.getTime();  
+       var d=Math.floor(t/1000/60/60/24);  
+       var h=Math.floor(t/1000/60/60%24);  
+       var m=Math.floor(t/1000/60%60);  
+       var s=Math.floor(t/1000%60);  
+  
+       document.getElementById("t_d").innerHTML = d + "天";  
+       document.getElementById("t_h").innerHTML = h + "时";  
+       document.getElementById("t_m").innerHTML = m + "分";  
+       document.getElementById("t_s").innerHTML = s + "秒";  
+       if(s=="0" && m=="0" && h=="0" && d=="0"){  
+       document.getElementById("mcfen").innerHTML ="梦里幽境初创日";//到期提醒  
+       document.getElementById("mcfen").style.color="red";}  
+}  
+   setInterval(GetRTime,0);  
+     
 </script>   
 </body>  
 </div></div></div></div></div>
@@ -107,7 +125,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦里幽境初创于2017年2月,是一个以普通玩家的角度同时兼顾长远健康发展而设计打造的MC服务器,力求接近原版,不做过多的限制. 服主没有太大经济压力,开服并非一时兴起,已经做了长远考虑.开服不以赚钱为目的,这是一个温馨向、养老向和怀旧向的服务器,闲暇时光与老朋友们一起回忆那些过往的点滴,那应该也是种不错的感觉...</p><br>
 <p><span style="color:#E53333;">❀</span><span style="color:#009900;"><strong>====================================</strong></span><span style="color:#E53333;">❀</span></p>
 <ul class="list-unstyled" style="font-family:微软雅黑;font-size:medium;">
-<li style="color:#003399;><a class="fa fa-caret-right pr-10 text-colored">&nbsp; &nbsp;&nbsp; &nbsp;<strong>服务器地址&nbsp;(需申请&nbsp;&nbsp;☞&nbsp;<a href="https://520.mcfen.net/dear_friend/support/" target="_blank"><span style="color:#E53333;">白名单</span></a>)</strong></li>
+<li style="color:#003399;><a class="fa fa-caret-right pr-10 text-colored">&nbsp; &nbsp;&nbsp; &nbsp;<strong>高防BGP服务器地址&nbsp;(需申请&nbsp;&nbsp;☞&nbsp;<a href="https://520.mcfen.net/dear_friend/support/" target="_blank"><span style="color:#E53333;">白名单</span></a>)</strong></li>
 </ul>
 <ul style="font-family:微软雅黑;font-size:medium;">
 <li>
@@ -122,7 +140,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a
 </ul>
 <ul style="font-family:微软雅黑;font-size:medium;">
 <li>
-<strong>正版体验</strong>: &nbsp;<a href="https://520.mcfen.net/server/mojang.html" target="_blank" title="正版体验设置项" style="color:#009900;"><strong>mojang.mcfen.net</strong></a> (<a style="color:#E53333;">暂停开放</a>)
+<strong>自动线路</strong>: &nbsp;<a href="https://520.mcfen.net/server/auto.html" target="_blank" title="自动线路设置项" style="color:#009900;"><strong>auto.mcfen.net</strong></a>
 </li>
 </ul>
 <p><span style="color:#E53333;">❀</span><span style="color:#009900;"><strong>====================================</strong></span><span style="color:#E53333;">❀</span></p>
@@ -204,21 +222,6 @@ conf: 'prod_6355f43ce150e770ff185d47aa5a67dc'
 <audio src="music/wind.mp3"  autoplay="autoplay" loop="-1" starttime="10"></audio>
 <!-- 梦里幽境送你一颗小红心 -->
 <script type="text/javascript" src="js/love.js"></script>
-<!-- 心知天气 -->
-<script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script>
-<script>tpwidget("init", {
-    "flavor": "bubble",
-    "location": "WT47HJP3HEMP",
-    "geolocation": "enabled",
-    "position": "bottom-left",
-    "margin": "10px 10px",
-    "language": "auto",
-    "unit": "c",
-    "theme": "chameleon",
-    "uid": "U181B6F0B8",
-    "hash": "56be777e18c099f02ca06e8a37cdc91f"
-});
-tpwidget("show");</script>                                             
-                                               
+
 </body>
 </html>
