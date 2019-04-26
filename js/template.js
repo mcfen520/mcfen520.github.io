@@ -1,7 +1,7 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('https://wx4.sinaimg.cn/large/60e61f9fgy1ftn4fsrbypj218g0p0qdm.png');
+		$(".banner-image").backstretch('https://i.loli.net/2019/04/26/5cc286a031c94.jpg');
 		
 		// Fixed header
 		//-----------------------------------------------
