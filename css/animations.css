@@ -161,17 +161,7 @@ File Description: Custom Animations
 
 /*! 畅言去广告代码 */
 
-#feedAv {
-	position: absolute ! important;
-	height: 0px;
-	transform: scale(0) !important;
-}
-
-#pop_ad {
-	transform: scale(0) !important;
-}
-
-#feedAv{ margin-top: -250px!important;transform: scale(0);}
+#feedAv{margin-top:-250px!important;transform:scale(0);}
 .module-cmt-box{padding:10px 16px!important;}
 .header-login{left: 746px!important;border: 0!important;border-radius: 0!important;}
 .post-wrap-border-t-r,.post-wrap-border-t-l,.post-wrap-border-r,.post-wrap-border-l{display:none;}
