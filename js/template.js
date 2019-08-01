@@ -1,7 +1,7 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g3p9sdxyq5j318g0p0b29.jpg');
+		$(".banner-image").backstretch('https://ae01.alicdn.com/kf/Hc517bcfcc0c04a858e2d8889254c5c6b5.jpg');
 		
 		// Fixed header
 		//-----------------------------------------------
